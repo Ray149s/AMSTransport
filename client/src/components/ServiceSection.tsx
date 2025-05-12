@@ -1,4 +1,4 @@
-import { Truck, Warehouse, Package, Container } from "lucide-react";
+import { Truck, Warehouse, Package } from "lucide-react";
 
 const ServiceSection = () => {
   return (
@@ -14,7 +14,7 @@ const ServiceSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Transportation Service */}
           <div className="flex flex-col items-center text-center p-6">
-            <Truck className="h-12 w-12 text-red-600 mb-4" />
+            <img src="/assets/AMS-Truck-Photo.png" alt="AMS Transportation Truck" className="h-24 w-auto mb-4" />
             <h3 className="text-lg font-bold mb-4 uppercase">TRANSPORTATION</h3>
             <p className="text-gray-600">
               We offer dependable transportation solutions, including flatbed services for oversized or heavy cargo that requires easy loading and unloading, and van transportation for standard freight. With a focus on safety and reliability, we ensure all goods are securely transported and delivered on time, every time.
@@ -23,7 +23,7 @@ const ServiceSection = () => {
 
           {/* Warehouse Relocation */}
           <div className="flex flex-col items-center text-center p-6">
-            <Warehouse className="h-12 w-12 text-red-600 mb-4" />
+            <img src="/assets/Facebook-Group-Cover.jpg" alt="AMS Warehouse Relocation" className="h-24 object-cover w-auto mb-4 rounded" />
             <h3 className="text-lg font-bold mb-4 uppercase">WAREHOUSE RELOCATION</h3>
             <p className="text-gray-600">
               Whether you're moving your warehouse or streamlining inventory management, our expert team is here to ensure a seamless transition. We handle every detail of the logistics, so you can focus on your business while we make your relocation smooth, efficient, and stress-free.
@@ -41,7 +41,7 @@ const ServiceSection = () => {
 
           {/* Storage Containers */}
           <div className="flex flex-col items-center text-center p-6">
-            <Container className="h-12 w-12 text-red-600 mb-4" />
+            <img src="/assets/Container.png" alt="AMS Storage Container" className="h-24 w-auto mb-4" />
             <h3 className="text-lg font-bold mb-4 uppercase">STORAGE CONTAINERS</h3>
             <p className="text-gray-600">
               Our durable, state-of-the-art storage containers deliver unmatched security and innovative solutions for safeguarding your equipment and materials. Designed for convenience and reliability, they offer easy access and robust protection for projects of any scale.

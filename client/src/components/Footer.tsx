@@ -31,9 +31,9 @@ const Footer = () => {
                 <MapPin className="h-5 w-5 mr-2 flex-shrink-0 mt-0.5" />
                 <span>
                   AMS Transportation<br />
-                  1900 Railroad Street<br />
-                  Suite 100<br />
-                  Stodium, GA 30066
+                  1920 Railroad Street<br />
+                  Suite #5<br />
+                  Statham, GA 30666
                 </span>
               </p>
             </address>
@@ -43,7 +43,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 pt-8 text-sm text-gray-400 flex flex-col md:flex-row justify-between items-center">
           <p>©2006 - 2025 AMS Transportation</p>
           <Link href="/privacy">
-            <a className="hover:text-white transition">Privacy Policy</a>
+            <div className="hover:text-white transition cursor-pointer">Privacy Policy</div>
           </Link>
           <p>Powered The Social Gloo</p>
         </div>

@@ -160,9 +160,9 @@ const Contact = () => {
                       <h3 className="font-semibold mb-2">Our Location</h3>
                       <address className="not-italic text-gray-600">
                         AMS Transportation<br />
-                        1900 Railroad Street<br />
-                        Suite 100<br />
-                        Stodium, GA 30066
+                        1920 Railroad Street<br />
+                        Suite #5<br />
+                        Statham, GA 30666
                       </address>
                     </div>
                   </div>

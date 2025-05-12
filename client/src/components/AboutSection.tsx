@@ -23,8 +23,8 @@ const AboutSection = () => {
                 </div>
                 <div className="absolute inset-0 bg-black/20"></div>
                 <img 
-                  src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
-                  alt="Don't miss the Deadline"
+                  src="/assets/AMS-Warehouse.png"
+                  alt="AMS Transportation Warehouse"
                   className="object-cover w-full h-full"
                 />
                 <div className="absolute bottom-4 left-4 right-4 text-white text-xl font-bold">
