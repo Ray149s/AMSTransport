@@ -29,7 +29,7 @@ const Header = () => {
           <div className="hidden md:flex items-center">
             <a href="tel:943-227-5246" className="mr-6 flex items-center text-sm">
               <span className="mr-1">Call:</span> 
-              <span className="font-bold text-red-600">943-227-5246</span>
+              <span className="font-bold underline">943-227-5246</span>
             </a>
           </div>
         </div>
