@@ -4,16 +4,19 @@ import { MapPin, Phone, Mail } from "lucide-react";
 const Footer = () => {
   return (
     <footer className="bg-black text-white">
-      <div className="container mx-auto px-4 pt-12 pb-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-8 mb-8">
-          <div className="max-w-[300px]">
+      <div className="container mx-auto px-4 py-12">
+        {/* Main footer columns */}
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
+          {/* Founded column */}
+          <div className="md:col-span-4">
             <h3 className="text-lg font-bold mb-4 uppercase">FOUNDED IN 2006</h3>
-            <p className="text-sm text-gray-300 mb-4">
+            <p className="text-sm text-gray-300 mb-4 max-w-xs">
               AMS Transportation is your trusted partner for shipping and logistics needs.
             </p>
           </div>
           
-          <div className="max-w-[300px]">
+          {/* Services column */}
+          <div className="md:col-span-4">
             <h3 className="text-lg font-bold mb-4 uppercase">OUR SERVICES</h3>
             <ul className="space-y-2 text-sm text-gray-300">
               <li>- Flatbed Transportation</li>
@@ -24,7 +27,8 @@ const Footer = () => {
             </ul>
           </div>
           
-          <div className="max-w-[300px]">
+          {/* Contact column */}
+          <div className="md:col-span-4">
             <h3 className="text-lg font-bold mb-4 uppercase">CONTACT US</h3>
             <address className="not-italic text-sm text-gray-300 mb-4">
               <p className="flex items-start mb-2">
@@ -52,12 +56,15 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-gray-900 pt-8 text-sm text-gray-400 flex flex-col md:flex-row justify-between items-center">
+        {/* Footer bottom */}
+        <div className="border-t border-gray-900 pt-8 mt-8 text-sm text-gray-400 grid grid-cols-1 md:grid-cols-3 gap-4">
           <p>©2006 - 2025 AMS Transportation</p>
-          <Link href="/privacy">
-            <div className="hover:text-white transition cursor-pointer">Privacy Policy</div>
-          </Link>
-          <p>Powered by The Social Gloo</p>
+          <div className="text-center">
+            <Link href="/privacy">
+              <span className="hover:text-white transition cursor-pointer">Privacy Policy</span>
+            </Link>
+          </div>
+          <p className="text-right md:text-right">Powered by The Social Gloo</p>
         </div>
       </div>
     </footer>
