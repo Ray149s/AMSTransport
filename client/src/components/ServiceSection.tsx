@@ -1,5 +1,6 @@
 import { Truck, Warehouse, Package } from "lucide-react";
 import flatbedTruckImage from "../assets/flatbed-truck.png";
+import warehouseRelocationImage from "../assets/warehouse-relocation.png";
 
 const ServiceSection = () => {
   return (
@@ -24,7 +25,7 @@ const ServiceSection = () => {
 
           {/* Warehouse Relocation */}
           <div className="flex flex-col items-center text-center p-6">
-            <img src="/assets/Facebook-Group-Cover.jpg" alt="AMS Warehouse Relocation" className="h-24 object-cover w-auto mb-4 rounded" />
+            <img src={warehouseRelocationImage} alt="AMS Warehouse Relocation" className="h-24 w-auto mb-4" />
             <h3 className="text-lg font-bold mb-4 uppercase">WAREHOUSE RELOCATION</h3>
             <p className="text-gray-600">
               Whether you're moving your warehouse or streamlining inventory management, our expert team is here to ensure a seamless transition. We handle every detail of the logistics, so you can focus on your business while we make your relocation smooth, efficient, and stress-free.
