@@ -5,15 +5,15 @@ const Footer = () => {
   return (
     <footer className="bg-black text-white">
       <div className="container mx-auto px-4 pt-12 pb-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-          <div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-8 mb-8">
+          <div className="max-w-[300px]">
             <h3 className="text-lg font-bold mb-4 uppercase">FOUNDED IN 2006</h3>
-            <p className="text-sm text-gray-300 mb-4 pr-4">
+            <p className="text-sm text-gray-300 mb-4">
               AMS Transportation is your trusted partner for shipping and logistics needs.
             </p>
           </div>
           
-          <div>
+          <div className="max-w-[300px]">
             <h3 className="text-lg font-bold mb-4 uppercase">OUR SERVICES</h3>
             <ul className="space-y-2 text-sm text-gray-300">
               <li>- Flatbed Transportation</li>
@@ -24,7 +24,7 @@ const Footer = () => {
             </ul>
           </div>
           
-          <div>
+          <div className="max-w-[300px]">
             <h3 className="text-lg font-bold mb-4 uppercase">CONTACT US</h3>
             <address className="not-italic text-sm text-gray-300 mb-4">
               <p className="flex items-start mb-2">
@@ -57,7 +57,7 @@ const Footer = () => {
           <Link href="/privacy">
             <div className="hover:text-white transition cursor-pointer">Privacy Policy</div>
           </Link>
-          <p>Powered The Social Gloo</p>
+          <p>Powered by The Social Gloo</p>
         </div>
       </div>
     </footer>
