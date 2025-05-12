@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import Hero from "@/components/Hero";
 import ContactBar from "@/components/ContactBar";
+import SloganSection from "@/components/SloganSection";
 
 const About = () => {
   return (
@@ -46,6 +47,8 @@ const About = () => {
           </div>
         </div>
       </section>
+      
+      <SloganSection />
     </>
   );
 };
