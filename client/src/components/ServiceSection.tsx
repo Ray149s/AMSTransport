@@ -1,11 +1,10 @@
 import { Truck, Warehouse, Package } from "lucide-react";
 import flatbedTruckImage from "../assets/flatbed-truck.png";
 import warehouseRelocationImage from "../assets/warehouse-relocation.png";
-import freightManagementImage from "../assets/freight-management.png";
 
 const ServiceSection = () => {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">OFFERING YOU THE BEST SOLUTION</h2>
@@ -35,7 +34,7 @@ const ServiceSection = () => {
 
           {/* Freight Management */}
           <div className="flex flex-col items-center text-center p-6">
-            <img src={freightManagementImage} alt="AMS Freight Management" className="h-24 w-auto mb-4" />
+            <Package className="h-12 w-12 text-red-600 mb-4" />
             <h3 className="text-lg font-bold mb-4 uppercase">FREIGHT MANAGEMENT</h3>
             <p className="text-gray-600">
               Our freight management services take the hassle out of shipping, offering expert guidance every step of the way. From strategic planning to flawless execution to real-time tracking and detailed reporting, we ensure your freight moves seamlessly and reaches its destination with precision and efficiency.
