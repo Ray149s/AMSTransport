@@ -8,8 +8,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
             <h3 className="text-lg font-bold mb-4 uppercase">FOUNDED IN 2006</h3>
-            <p className="text-sm text-gray-300 mb-4">
-              AMS Transportation is your trusted partner for all your shipping and logistics needs.
+            <p className="text-sm text-gray-300 mb-4 pr-4">
+              AMS Transportation is your trusted partner for shipping and logistics needs.
             </p>
           </div>
           
