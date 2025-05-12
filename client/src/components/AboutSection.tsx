@@ -2,16 +2,29 @@ const AboutSection = () => {
   return (
     <section className="py-16 bg-red-600 text-white">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          <div>
-            <h2 className="text-3xl font-bold mb-4">Founded in 2006</h2>
-            <p className="mb-6">
+        <div className="md:flex items-center">
+          <div className="md:w-1/2 pr-8 mb-8 md:mb-0">
+            <div className="flex items-center mb-6">
+              <div className="mr-4">
+                <img 
+                  src="/trucks-highway.png" 
+                  alt="AMS Transportation Fleet" 
+                  className="w-20 h-20 object-cover rounded-full border-4 border-white"
+                />
+              </div>
+              <h2 className="text-3xl font-bold">Founded in 2006</h2>
+            </div>
+            <p className="mb-6 text-lg">
               We handle everything from standard goods to oversized freight with finesse and precision.
+            </p>
+            <p className="text-lg">
+              For almost two decades, AMS Transportation has been a leader in the logistics industry, 
+              providing reliable transportation solutions for businesses of all sizes.
             </p>
           </div>
           
-          <div className="relative">
-            <div className="rounded-lg overflow-hidden">
+          <div className="md:w-1/2">
+            <div className="rounded-lg overflow-hidden shadow-xl">
               <div className="aspect-w-16 aspect-h-9 relative">
                 <img 
                   src="/trucks-highway.png" 
