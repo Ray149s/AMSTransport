@@ -14,7 +14,7 @@ const ServiceSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Transportation Service */}
           <div className="flex flex-col items-center text-center p-6">
-            <img src="/assets/truck-icon.png" alt="AMS Transportation Truck" className="h-24 w-auto mb-4" />
+            <img src="/assets/flatbed-truck.png" alt="AMS Flatbed Truck" className="h-24 w-auto mb-4" />
             <h3 className="text-lg font-bold mb-4 uppercase">TRANSPORTATION</h3>
             <p className="text-gray-600">
               We offer dependable transportation solutions, including flatbed services for oversized or heavy cargo that requires easy loading and unloading, and van transportation for standard freight. With a focus on safety and reliability, we ensure all goods are securely transported and delivered on time, every time.
