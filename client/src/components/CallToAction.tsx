@@ -26,7 +26,7 @@ const CallToAction = () => {
               <Button 
                 variant="outline" 
                 size="lg" 
-                className="font-bold text-lg px-8 py-6 rounded-md border-white text-white hover:bg-white hover:text-gray-900"
+                className="font-bold text-lg px-8 py-6 rounded-md border-white text-white bg-transparent hover:bg-white hover:text-gray-900"
               >
                 Call Us Now
               </Button>
