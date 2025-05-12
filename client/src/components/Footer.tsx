@@ -3,7 +3,7 @@ import { MapPin, Phone, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-black text-white">
       <div className="container mx-auto px-4 pt-12 pb-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
@@ -52,7 +52,7 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-gray-800 pt-8 text-sm text-gray-400 flex flex-col md:flex-row justify-between items-center">
+        <div className="border-t border-gray-900 pt-8 text-sm text-gray-400 flex flex-col md:flex-row justify-between items-center">
           <p>©2006 - 2025 AMS Transportation</p>
           <Link href="/privacy">
             <div className="hover:text-white transition cursor-pointer">Privacy Policy</div>
