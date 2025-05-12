@@ -14,11 +14,11 @@ const AboutSection = () => {
             <div className="rounded-lg overflow-hidden">
               <div className="aspect-w-16 aspect-h-9 relative">
                 <img 
-                  src="/assets/ams-trucks-highways.png" 
+                  src="/assets/ams-trucks-highway.png" 
                   alt="AMS Transportation trucks on highway" 
                   className="w-full h-full object-cover rounded-lg"
                 />
-                <div className="absolute bottom-4 left-4 right-4 text-white text-xl font-bold z-10">
+                <div className="absolute bottom-4 left-4 right-4 text-white text-xl font-bold z-10 bg-black/30 p-2 rounded">
                   Don't miss the Deadline!
                 </div>
               </div>
