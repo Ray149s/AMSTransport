@@ -7,6 +7,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { Checkbox } from "@/components/ui/checkbox";
 import {
   Form,
   FormControl,
@@ -14,6 +15,7 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
+  FormDescription,
 } from "@/components/ui/form";
 import { useToast } from "@/hooks/use-toast";
 import Hero from "@/components/Hero";
@@ -24,6 +26,9 @@ const formSchema = z.object({
   email: z.string().email({ message: "Please enter a valid email address" }),
   phone: z.string().min(10, { message: "Please enter a valid phone number" }),
   message: z.string().min(10, { message: "Message must be at least 10 characters" }),
+  contactConsent: z.boolean().refine(val => val === true, {
+    message: "You must agree to be contacted",
+  }),
 });
 
 type FormValues = z.infer<typeof formSchema>;
@@ -39,6 +44,7 @@ const Contact = () => {
       email: "",
       phone: "",
       message: "",
+      contactConsent: false,
     },
   });
 
@@ -134,6 +140,30 @@ const Contact = () => {
                               {...field} 
                             />
                           </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                    
+                    <FormField
+                      control={form.control}
+                      name="contactConsent"
+                      render={({ field }) => (
+                        <FormItem className="flex flex-row items-start space-x-3 space-y-0 rounded-md border p-4">
+                          <FormControl>
+                            <Checkbox
+                              checked={field.value}
+                              onCheckedChange={field.onChange}
+                            />
+                          </FormControl>
+                          <div className="space-y-1 leading-none">
+                            <FormLabel>
+                              Permission to contact
+                            </FormLabel>
+                            <FormDescription>
+                              By checking this box, you agree to allow AMS Transportation to contact you regarding your inquiry.
+                            </FormDescription>
+                          </div>
                           <FormMessage />
                         </FormItem>
                       )}
