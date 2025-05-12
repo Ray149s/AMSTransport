@@ -10,13 +10,13 @@ const Hero = ({ showContactButton = true }: HeroProps) => {
     <div 
       className="hero-section bg-gray-800 relative overflow-hidden"
       style={{ 
-        backgroundImage: "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1586528116493-73646a02bebe?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80')"
+        backgroundImage: "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/assets/Homepage-Image.jpg')"
       }}
     >
       <div className="container mx-auto px-4 py-24 relative z-10">
         <div className="flex flex-col items-center text-center text-white">
           <h1 className="text-5xl md:text-7xl font-bold mb-4">AMS</h1>
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-red-500">TRANSPORTATION</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-red-500 italic">TRANSPORTATION</h2>
           <p className="text-xl mb-8 max-w-2xl">
             Driven by Innovation, Fueled by Success
           </p>
