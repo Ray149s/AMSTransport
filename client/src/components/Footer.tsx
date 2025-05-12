@@ -1,5 +1,4 @@
 import { Link } from "wouter";
-import { MapPin, Phone, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -11,7 +10,7 @@ const Footer = () => {
           <div className="md:col-span-4">
             <h3 className="text-lg font-bold mb-4 uppercase">FOUNDED IN 2006</h3>
             <p className="text-sm text-gray-300 mb-4 max-w-xs">
-              AMS Transportation is your trusted partner for shipping and logistics needs.
+              AMS Transportation is your trusted partner for all your transportation and logistics needs.
             </p>
           </div>
           
@@ -27,44 +26,31 @@ const Footer = () => {
             </ul>
           </div>
           
-          {/* Contact column */}
+          {/* Location column */}
           <div className="md:col-span-4">
-            <h3 className="text-lg font-bold mb-4 uppercase">CONTACT US</h3>
+            <h3 className="text-lg font-bold mb-4 uppercase">LOCATION</h3>
             <address className="not-italic text-sm text-gray-300 mb-4">
-              <p className="flex items-start mb-2">
-                <MapPin className="h-5 w-5 mr-2 flex-shrink-0 mt-0.5" />
-                <span>
-                  AMS Transportation<br />
-                  1920 Railroad Street<br />
-                  Suite #5<br />
-                  Statham, GA 30666
-                </span>
-              </p>
-              <p className="flex items-start mb-2">
-                <Phone className="h-5 w-5 mr-2 flex-shrink-0 mt-0.5" />
-                <span>
-                  <a href="tel:943-227-5246" className="hover:text-white">943-227-5246</a>
-                </span>
-              </p>
-              <p className="flex items-start mb-2">
-                <Mail className="h-5 w-5 mr-2 flex-shrink-0 mt-0.5" />
-                <span>
-                  <a href="mailto:info@alwaysmovingsomething.com" className="hover:text-white">info@alwaysmovingsomething.com</a>
-                </span>
+              <p>
+                AMS Transportation<br />
+                1920 Railroad Street<br />
+                Suite #5<br />
+                Statham, GA 30666
               </p>
             </address>
           </div>
         </div>
         
         {/* Footer bottom */}
-        <div className="border-t border-gray-900 pt-8 mt-8 text-sm text-gray-400 grid grid-cols-1 md:grid-cols-3 gap-4">
-          <p>©2006 - 2025 AMS Transportation</p>
-          <div className="text-center">
+        <div className="border-t border-gray-900 pt-8 mt-8 text-sm text-gray-400 flex justify-between">
+          <div className="flex items-center space-x-4">
+            <p>©2006 - 2025 AMS Transportation</p>
             <Link href="/privacy">
               <span className="hover:text-white transition cursor-pointer">Privacy Policy</span>
             </Link>
           </div>
-          <p className="text-right md:text-right">Powered by The Social Gloo</p>
+          <div>
+            <p>Powered The Social Gloo</p>
+          </div>
         </div>
       </div>
     </footer>
