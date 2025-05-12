@@ -25,7 +25,7 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-lg font-bold mb-4 uppercase">LOCATION</h3>
+            <h3 className="text-lg font-bold mb-4 uppercase">CONTACT US</h3>
             <address className="not-italic text-sm text-gray-300 mb-4">
               <p className="flex items-start mb-2">
                 <MapPin className="h-5 w-5 mr-2 flex-shrink-0 mt-0.5" />
@@ -34,6 +34,18 @@ const Footer = () => {
                   1920 Railroad Street<br />
                   Suite #5<br />
                   Statham, GA 30666
+                </span>
+              </p>
+              <p className="flex items-start mb-2">
+                <Phone className="h-5 w-5 mr-2 flex-shrink-0 mt-0.5" />
+                <span>
+                  <a href="tel:943-227-5246" className="hover:text-white">943-227-5246</a>
+                </span>
+              </p>
+              <p className="flex items-start mb-2">
+                <Mail className="h-5 w-5 mr-2 flex-shrink-0 mt-0.5" />
+                <span>
+                  <a href="mailto:info@alwaysmovingsomething.com" className="hover:text-white">info@alwaysmovingsomething.com</a>
                 </span>
               </p>
             </address>
