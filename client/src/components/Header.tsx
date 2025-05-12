@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Phone, Menu } from "lucide-react";
 import MobileMenu from "./MobileMenu";
+import logoWithTruck from "../assets/logo-with-truck.png";
 
 const Header = () => {
   const [location] = useLocation();
@@ -20,7 +21,7 @@ const Header = () => {
           <div className="flex items-center">
             <Link href="/">
               <div className="flex items-center cursor-pointer">
-                <img src="/assets/logo-with-truck.png" alt="AMS Transportation Logo" className="w-auto h-16" />
+                <img src={logoWithTruck} alt="AMS Transportation Logo" className="w-auto h-16" />
               </div>
             </Link>
           </div>
