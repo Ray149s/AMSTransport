@@ -1,9 +1,24 @@
 import { Helmet } from "react-helmet";
-import { Truck, Warehouse, Package, Container } from "lucide-react";
+import { Truck, Warehouse, Package, Container, Play } from "lucide-react";
+import { useState, useRef } from "react";
 import Hero from "@/components/Hero";
 import ContactBar from "@/components/ContactBar";
 
 const Services = () => {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  const handlePlayVideo = () => {
+    if (videoRef.current) {
+      if (!isPlaying) {
+        videoRef.current.play();
+      } else {
+        videoRef.current.pause();
+      }
+      setIsPlaying(!isPlaying);
+    }
+  };
+
   return (
     <>
       <Helmet>
@@ -22,12 +37,46 @@ const Services = () => {
               AMS Transportation offers a comprehensive range of logistics and transportation services designed to meet your specific needs with efficiency and reliability.
             </p>
           </div>
+
+          {/* Promotional Video */}
+          <div className="max-w-4xl mx-auto mb-16">
+            <div className="relative rounded-lg overflow-hidden bg-gray-800">
+              <div className="aspect-w-16 aspect-h-9 relative">
+                {!isPlaying && (
+                  <div 
+                    className="absolute inset-0 flex items-center justify-center z-10 cursor-pointer"
+                    onClick={handlePlayVideo}
+                  >
+                    <div className="bg-white/20 rounded-full p-4">
+                      <Play className="h-16 w-16 text-white" />
+                    </div>
+                    <div className="absolute inset-0 bg-black/30"></div>
+                  </div>
+                )}
+                
+                <video 
+                  ref={videoRef}
+                  className="w-full h-full object-cover"
+                  src="/assets/videos/why-ams-transportation.mp4"
+                  poster="/assets/Facebook-Group-Cover.jpg"
+                  onClick={handlePlayVideo}
+                  onEnded={() => setIsPlaying(false)}
+                  controls={isPlaying}
+                />
+                {!isPlaying && (
+                  <div className="absolute bottom-8 left-0 right-0 text-white text-2xl font-bold z-10 text-center">
+                    Why Choose AMS Transportation
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
           
           <div className="space-y-16">
             {/* Transportation Service */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div className="bg-gray-100 p-8 rounded-lg flex justify-center">
-                <Truck className="h-32 w-32 text-red-600" />
+                <img src="/assets/AMS-Truck-Photo.png" alt="AMS Transportation Truck" className="h-40 w-auto" />
               </div>
               <div>
                 <h2 className="text-2xl font-bold mb-4">Transportation</h2>
@@ -58,7 +107,7 @@ const Services = () => {
             {/* Warehouse Relocation */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div className="order-1 md:order-2 bg-gray-100 p-8 rounded-lg flex justify-center">
-                <Warehouse className="h-32 w-32 text-red-600" />
+                <img src="/assets/AMS-Warehouse.png" alt="AMS Warehouse" className="h-40 w-auto" />
               </div>
               <div className="order-2 md:order-1">
                 <h2 className="text-2xl font-bold mb-4">Warehouse Relocation</h2>
@@ -120,7 +169,7 @@ const Services = () => {
             {/* Storage Containers */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div className="order-1 md:order-2 bg-gray-100 p-8 rounded-lg flex justify-center">
-                <Container className="h-32 w-32 text-red-600" />
+                <img src="/assets/Container.png" alt="AMS Storage Container" className="h-40 w-auto" />
               </div>
               <div className="order-2 md:order-1">
                 <h2 className="text-2xl font-bold mb-4">Storage Containers</h2>
