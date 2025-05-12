@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import ContactBar from "@/components/ContactBar";
 import ServiceSection from "@/components/ServiceSection";
 import AboutSection from "@/components/AboutSection";
+import CallToAction from "@/components/CallToAction";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <ContactBar />
       <ServiceSection />
       <AboutSection />
+      <CallToAction />
     </>
   );
 };
