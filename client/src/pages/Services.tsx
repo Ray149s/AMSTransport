@@ -3,6 +3,7 @@ import { Truck, Warehouse, Package, Container, Play } from "lucide-react";
 import { useState, useRef } from "react";
 import Hero from "@/components/Hero";
 import ContactBar from "@/components/ContactBar";
+import CallToAction from "@/components/CallToAction";
 
 const Services = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -199,6 +200,8 @@ const Services = () => {
           </div>
         </div>
       </section>
+      
+      <CallToAction />
     </>
   );
 };
