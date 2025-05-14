@@ -11,8 +11,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cors({
   origin: process.env.NODE_ENV === "production" 
     ? [
-        "https://amstransportation.netlify.app", // Update this with your actual Netlify domain once deployed
-        "https://alwaysmovingsomething.com",     // If you connect a custom domain later
+        "https://amstransportation.netlify.app",   // Original domain
+        "https://gilded-gelato-b9d495.netlify.app", // Your actual Netlify domain
+        "https://alwaysmovingsomething.com",       // If you connect a custom domain later
+        // Allow any subdomain of netlify.app for testing
+        /\.netlify\.app$/
       ] 
     : "http://localhost:5173", // For local development
   credentials: true,
