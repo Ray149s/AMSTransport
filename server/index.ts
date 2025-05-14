@@ -7,6 +7,17 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+// Configure CORS to allow requests from your Netlify frontend
+app.use(cors({
+  origin: process.env.NODE_ENV === "production" 
+    ? [
+        "https://amstransportation.netlify.app", // Update this with your actual Netlify domain once deployed
+        "https://alwaysmovingsomething.com",     // If you connect a custom domain later
+      ] 
+    : "http://localhost:5173", // For local development
+  credentials: true,
+}));
+
 app.use((req, res, next) => {
   const start = Date.now();
   const path = req.path;
