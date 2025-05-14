@@ -1,7 +1,7 @@
 # netlify.toml
 [build]
-  base = ""
-  publish = "dist/public"
+  base = "client"
+  publish = "../dist/public"
   command = "npm install && npm run build"
 
 [build.environment]
