@@ -1,0 +1,50 @@
+2025-05-14T16:26:28.252919245Z added 485 packages, and audited 486 packages in 8s
+2025-05-14T16:26:28.252927896Z 
+2025-05-14T16:26:28.252931816Z 64 packages are looking for funding
+2025-05-14T16:26:28.252938416Z   run `npm fund` for details
+2025-05-14T16:26:28.279427213Z 
+2025-05-14T16:26:28.279434853Z 5 moderate severity vulnerabilities
+2025-05-14T16:26:28.279438213Z 
+2025-05-14T16:26:28.279441994Z To address all issues (including breaking changes), run:
+2025-05-14T16:26:28.279445404Z   npm audit fix --force
+2025-05-14T16:26:28.279448614Z 
+2025-05-14T16:26:28.279452164Z Run `npm audit` for details.
+2025-05-14T16:26:28.479074517Z 
+2025-05-14T16:26:28.479084827Z > rest-express@1.0.0 build
+2025-05-14T16:26:28.479089727Z > vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
+2025-05-14T16:26:28.479094437Z 
+2025-05-14T16:26:28.692687489Z vite v5.4.19 building for production...
+2025-05-14T16:26:28.745906288Z transforming...
+2025-05-14T16:26:29.002527016Z Browserslist: browsers data (caniuse-lite) is 7 months old. Please run:
+2025-05-14T16:26:29.002541647Z   npx update-browserslist-db@latest
+2025-05-14T16:26:29.002545687Z   Why you should do it regularly: https://github.com/browserslist/update-db#readme
+2025-05-14T16:26:32.98569533Z ✓ 1714 modules transformed.
+2025-05-14T16:26:33.486320215Z rendering chunks...
+2025-05-14T16:26:33.495593829Z computing gzip size...
+2025-05-14T16:26:33.51521125Z ../dist/public/index.html                                  1.63 kB │ gzip:   0.70 kB
+2025-05-14T16:26:33.515301212Z ../dist/public/assets/warehouse-relocation-CWSYSonx.png   28.17 kB
+2025-05-14T16:26:33.515310012Z ../dist/public/assets/flatbed-truck-GDlTMAVC.png          31.55 kB
+2025-05-14T16:26:33.515431964Z ../dist/public/assets/logo-with-truck-hnWIBoYM.png        62.30 kB
+2025-05-14T16:26:33.515519276Z ../dist/public/assets/index-D5lJFY4p.css                  64.10 kB │ gzip:  11.45 kB
+2025-05-14T16:26:33.515527666Z ../dist/public/assets/index-JgWqU36A.js                  684.32 kB │ gzip: 194.76 kB
+2025-05-14T16:26:33.515613678Z 
+2025-05-14T16:26:33.515620228Z (!) Some chunks are larger than 500 kB after minification. Consider:
+2025-05-14T16:26:33.515625208Z - Using dynamic import() to code-split the application
+2025-05-14T16:26:33.515629978Z - Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+2025-05-14T16:26:33.515633398Z - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+2025-05-14T16:26:33.515759851Z ✓ built in 4.80s
+2025-05-14T16:26:33.584429898Z 
+2025-05-14T16:26:33.584436798Z   dist/index.js  6.2kb
+2025-05-14T16:26:33.584440118Z 
+2025-05-14T16:26:33.584443488Z ⚡ Done in 4ms
+2025-05-14T16:26:35.255146362Z ==> Uploading build...
+2025-05-14T16:26:58.143230535Z ==> Uploaded in 19.3s. Compression took 3.6s
+2025-05-14T16:26:58.274278424Z ==> Build successful 🎉
+2025-05-14T16:27:00.901131258Z ==> Deploying...
+2025-05-14T16:27:22.733226255Z ==> Running 'npm run start'
+2025-05-14T16:27:23.010934851Z 
+2025-05-14T16:27:23.010960232Z > rest-express@1.0.0 start
+2025-05-14T16:27:23.010965152Z > NODE_ENV=production node dist/index.js
+2025-05-14T16:27:23.010967273Z 
+2025-05-14T16:27:24.609406346Z 4:27:24 PM [express] serving on port 10000
+2025-05-14T16:27:32.109172012Z ==> Your service is live 🎉
