@@ -1,8 +1,9 @@
-import type { Express, Request, Response } from "express";
+import type { Express, Request, Response, NextFunction } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { contactFormSchema } from "../shared/schema";
 import { log } from "./vite";
+import nodemailer from "nodemailer";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Contact form submission endpoint
@@ -11,11 +12,61 @@ export async function registerRoutes(app: Express): Promise<Server> {
       // Validate the request body against our schema
       const formData = contactFormSchema.parse(req.body);
       
-      // Log the submission (in a real app, you'd likely send an email or store in a database)
+      // Log the submission
       log(`Contact form submission received from ${formData.name} (${formData.email})`);
       
-      // In production, you would handle the form data (e.g., send email, store in DB)
-      // For now, we'll just acknowledge receipt
+      // Create a test transport using the default SMTP transport
+      const transporter = nodemailer.createTransport({
+        host: 'smtp.gmail.com',
+        port: 587,
+        secure: false, // true for 465, false for other ports
+        auth: {
+          user: 'noreply@example.com', // this doesn't need to be real for testing
+          pass: 'password123' // this doesn't need to be real for testing
+        },
+        tls: {
+          rejectUnauthorized: false // Only use this for testing
+        }
+      });
+      
+      // Email content
+      const mailOptions = {
+        from: '"AMS Transportation Website" <noreply@example.com>',
+        // TESTING: Using raymondduenas2100@gmail.com instead of the production email
+        to: 'raymondduenas2100@gmail.com', // CHANGE BACK TO info@alwaysmovingsomething.com IN PRODUCTION
+        subject: `New Contact Form Submission from ${formData.name}`,
+        text: `
+          Name: ${formData.name}
+          Email: ${formData.email}
+          Phone: ${formData.phone}
+          
+          Message:
+          ${formData.message}
+        `,
+        html: `
+          <h2>New Contact Form Submission</h2>
+          <p><strong>Name:</strong> ${formData.name}</p>
+          <p><strong>Email:</strong> ${formData.email}</p>
+          <p><strong>Phone:</strong> ${formData.phone}</p>
+          <p><strong>Message:</strong></p>
+          <p>${formData.message.replace(/\n/g, '<br>')}</p>
+        `
+      };
+      
+      try {
+        // For testing, we'll just log what would be sent and not actually attempt sending
+        // since we don't have real SMTP credentials
+        log('Would send email with the following details:');
+        log(JSON.stringify(mailOptions, null, 2));
+        
+        /* Uncomment this in production with real credentials
+        await transporter.sendMail(mailOptions);
+        log('Email sent successfully'); 
+        */
+      } catch (emailError) {
+        log(`Error sending email: ${emailError}`);
+        // Don't fail the request if email sending fails
+      }
       
       return res.status(200).json({
         success: true,
