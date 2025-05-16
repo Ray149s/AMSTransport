@@ -15,14 +15,14 @@ export async function registerRoutes(app: Express): Promise<Server> {
       // Log the submission
       log(`Contact form submission received from ${formData.name} (${formData.email})`);
       
-      // Create SMTP transport with real credentials
+      // Create SMTP transport with Google App Password
       const transporter = nodemailer.createTransport({
         host: 'smtp.gmail.com',
         port: 587,
         secure: false, // Using TLS
         auth: {
           user: 'joe@alwaysmovingsomething.com',
-          pass: 'Alw@ys6115$'
+          pass: 'jmcy zobr gaee dosp' // App Password specifically for this application
         }
       });
       
