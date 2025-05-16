@@ -42,36 +42,18 @@ const Services = () => {
                 At AMS Transportation, we deliver tailored transportation and logistics solutions designed to meet your unique needs. With a dedication to safety, reliability, and efficiency, we ensure your cargo reaches its destination seamlessly. Here's an overview of our core services:
               </p>
               
-              {/* Promotional Video */}
+              {/* Services Image */}
               <div className="max-w-4xl mx-auto mb-16">
-                <div className="relative rounded-lg overflow-hidden bg-gray-800 shadow-xl">
+                <div className="relative rounded-lg overflow-hidden shadow-xl">
                   <div className="aspect-w-16 aspect-h-9 relative">
-                    {!isPlaying && (
-                      <div 
-                        className="absolute inset-0 flex items-center justify-center z-10 cursor-pointer"
-                        onClick={handlePlayVideo}
-                      >
-                        <div className="bg-white/20 rounded-full p-4">
-                          <Play className="h-16 w-16 text-white" />
-                        </div>
-                        <div className="absolute inset-0 bg-black/30"></div>
-                      </div>
-                    )}
-                    
-                    <video 
-                      ref={videoRef}
-                      className="w-full h-full object-cover"
-                      src="/assets/videos/why-ams-transportation.mp4"
-                      poster="/assets/Facebook-Group-Cover.jpg"
-                      onClick={handlePlayVideo}
-                      onEnded={() => setIsPlaying(false)}
-                      controls={isPlaying}
+                    <img 
+                      src="/assets/ams-services-trucks.png" 
+                      alt="AMS Transportation Services - Trucks on highway" 
+                      className="w-full h-full object-cover rounded-lg"
                     />
-                    {!isPlaying && (
-                      <div className="absolute bottom-8 left-0 right-0 text-white text-2xl font-bold z-10 text-center">
-                        Why Choose AMS Transportation
-                      </div>
-                    )}
+                    <div className="absolute bottom-8 left-0 right-0 text-white text-2xl font-bold z-10 text-center">
+                      Why Choose AMS Transportation
+                    </div>
                   </div>
                 </div>
               </div>
