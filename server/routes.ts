@@ -15,23 +15,20 @@ export async function registerRoutes(app: Express): Promise<Server> {
       // Log the submission
       log(`Contact form submission received from ${formData.name} (${formData.email})`);
       
-      // Create a test transport using the default SMTP transport
+      // Create SMTP transport with real credentials
       const transporter = nodemailer.createTransport({
         host: 'smtp.gmail.com',
         port: 587,
-        secure: false, // true for 465, false for other ports
+        secure: false, // Using TLS
         auth: {
-          user: 'noreply@example.com', // this doesn't need to be real for testing
-          pass: 'password123' // this doesn't need to be real for testing
-        },
-        tls: {
-          rejectUnauthorized: false // Only use this for testing
+          user: 'joe@alwaysmovingsomething.com',
+          pass: 'Alw@ys6115$'
         }
       });
       
       // Email content
       const mailOptions = {
-        from: '"AMS Transportation Website" <noreply@example.com>',
+        from: '"AMS Transportation Website" <joe@alwaysmovingsomething.com>',
         // Using joe@alwaysmovingsomething.com as the recipient
         to: 'joe@alwaysmovingsomething.com',
         subject: `New Contact Form Submission from ${formData.name}`,
@@ -54,15 +51,13 @@ export async function registerRoutes(app: Express): Promise<Server> {
       };
       
       try {
-        // For testing, we'll just log what would be sent and not actually attempt sending
-        // since we don't have real SMTP credentials
-        log('Would send email with the following details:');
+        // Send the email with the contact form details
+        log('Sending email with the following details:');
         log(JSON.stringify(mailOptions, null, 2));
         
-        /* Uncomment this in production with real credentials
+        // Using real credentials to send the email
         await transporter.sendMail(mailOptions);
-        log('Email sent successfully'); 
-        */
+        log('Email sent successfully');
       } catch (emailError) {
         log(`Error sending email: ${emailError}`);
         // Don't fail the request if email sending fails
