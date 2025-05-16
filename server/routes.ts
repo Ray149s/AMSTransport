@@ -32,8 +32,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
       // Email content
       const mailOptions = {
         from: '"AMS Transportation Website" <noreply@example.com>',
-        // TESTING: Using raymondduenas2100@gmail.com instead of the production email
-        to: 'raymondduenas2100@gmail.com', // CHANGE BACK TO info@alwaysmovingsomething.com IN PRODUCTION
+        // Using joe@alwaysmovingsomething.com as the recipient
+        to: 'joe@alwaysmovingsomething.com',
         subject: `New Contact Form Submission from ${formData.name}`,
         text: `
           Name: ${formData.name}

@@ -227,8 +227,8 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold mb-2">Email</h3>
                       <p className="text-gray-600">
-                        <a href="mailto:info@alwaysmovingsomething.com" className="hover:text-red-600 transition">
-                          info@alwaysmovingsomething.com
+                        <a href="mailto:joe@alwaysmovingsomething.com" className="hover:text-red-600 transition">
+                          joe@alwaysmovingsomething.com
                         </a>
                       </p>
                     </div>
