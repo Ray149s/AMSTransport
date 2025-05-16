@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet";
 import { Truck, Warehouse, Package, Container, ArrowRight } from "lucide-react";
 import { useState } from "react";
 import { Link } from "wouter";
-import servicesImage from "@/assets/ams-services-trucks.png";
+import servicesImage from "@/assets/ams-services-trucks-cropped.png";
 import Hero from "@/components/Hero";
 import ContactBar from "@/components/ContactBar";
 import CallToAction from "@/components/CallToAction";
@@ -32,13 +32,13 @@ const Services = () => {
               {/* Services Image */}
               <div className="max-w-4xl mx-auto mb-16">
                 <div className="relative rounded-lg overflow-hidden shadow-xl">
-                  <div className="aspect-w-16 aspect-h-9 relative">
+                  <div className="relative">
                     <img 
                       src={servicesImage} 
                       alt="AMS Transportation Services - Trucks on highway" 
-                      className="w-full h-full object-cover rounded-lg"
+                      className="w-full rounded-lg"
                     />
-                    <div className="absolute bottom-8 left-0 right-0 text-white text-2xl font-bold z-10 text-center">
+                    <div className="absolute bottom-6 left-0 right-0 text-white text-2xl font-bold z-10 text-center bg-black/30 py-2">
                       Why Choose AMS Transportation
                     </div>
                   </div>
