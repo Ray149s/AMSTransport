@@ -1,26 +1,13 @@
 import { Helmet } from "react-helmet";
-import { Truck, Warehouse, Package, Container, Play, ArrowRight } from "lucide-react";
-import { useState, useRef } from "react";
+import { Truck, Warehouse, Package, Container, ArrowRight } from "lucide-react";
+import { useState } from "react";
 import { Link } from "wouter";
+import servicesImage from "@/assets/ams-services-trucks.png";
 import Hero from "@/components/Hero";
 import ContactBar from "@/components/ContactBar";
 import CallToAction from "@/components/CallToAction";
 
 const Services = () => {
-  const [isPlaying, setIsPlaying] = useState(false);
-  const videoRef = useRef<HTMLVideoElement>(null);
-
-  const handlePlayVideo = () => {
-    if (videoRef.current) {
-      if (!isPlaying) {
-        videoRef.current.play();
-      } else {
-        videoRef.current.pause();
-      }
-      setIsPlaying(!isPlaying);
-    }
-  };
-
   return (
     <>
       <Helmet>
@@ -47,7 +34,7 @@ const Services = () => {
                 <div className="relative rounded-lg overflow-hidden shadow-xl">
                   <div className="aspect-w-16 aspect-h-9 relative">
                     <img 
-                      src="/assets/ams-services-trucks.png" 
+                      src={servicesImage} 
                       alt="AMS Transportation Services - Trucks on highway" 
                       className="w-full h-full object-cover rounded-lg"
                     />
