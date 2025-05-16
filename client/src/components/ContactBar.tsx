@@ -16,8 +16,8 @@ const ContactBar = () => {
           <div className="flex items-center mb-4 md:mb-0">
             <Mail className="h-5 w-5 mr-2" />
             <span className="uppercase text-sm font-medium">EMAIL US</span>
-            <a href="mailto:info@alwaysmovingsomething.com" className="ml-2 text-sm">
-              info@alwaysmovingsomething.com
+            <a href="mailto:joe@alwaysmovingsomething.com" className="ml-2 text-sm">
+              joe@alwaysmovingsomething.com
             </a>
           </div>
           
