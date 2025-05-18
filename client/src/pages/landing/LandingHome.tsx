@@ -19,9 +19,7 @@ const LandingHome: React.FC = () => {
               AMS Transportation delivers tailored transportation and logistics solutions designed for your specific needs. 
               From flatbed and van services to complete freight management and warehouse relocation.
             </p>
-            <Link href="#services">
-              <a className="hero-cta">Explore Our Services</a>
-            </Link>
+            <a href="#services" className="hero-cta">Explore Our Services</a>
           </div>
         </div>
         <div 
@@ -41,45 +39,35 @@ const LandingHome: React.FC = () => {
               <div className="feature-icon">🚚</div>
               <h3 className="feature-title">Flatbed Trucking</h3>
               <p className="feature-text">Specialized flatbed transportation for oversized and non-standard freight across the continental US.</p>
-              <Link href="/landing/services/flatbed">
-                <span className="hero-cta" style={{ marginTop: '1rem', display: 'inline-block' }}>Learn More</span>
-              </Link>
+              <a href="/landing/services/flatbed" className="hero-cta" style={{ marginTop: '1rem', display: 'inline-block' }}>Learn More</a>
             </div>
             
             <div className="feature-card">
               <div className="feature-icon">🚐</div>
               <h3 className="feature-title">Van Transportation</h3>
               <p className="feature-text">Secure and reliable van transportation for time-sensitive and valuable cargo.</p>
-              <Link href="/landing/services/van">
-                <span className="hero-cta" style={{ marginTop: '1rem', display: 'inline-block' }}>Learn More</span>
-              </Link>
+              <a href="/landing/services/van" className="hero-cta" style={{ marginTop: '1rem', display: 'inline-block' }}>Learn More</a>
             </div>
             
             <div className="feature-card">
               <div className="feature-icon">🏭</div>
               <h3 className="feature-title">Warehouse Relocation</h3>
               <p className="feature-text">Complete warehouse moving solutions including inventory management and setup.</p>
-              <Link href="/landing/services/warehouse-relocation">
-                <span className="hero-cta" style={{ marginTop: '1rem', display: 'inline-block' }}>Learn More</span>
-              </Link>
+              <a href="/landing/services/warehouse-relocation" className="hero-cta" style={{ marginTop: '1rem', display: 'inline-block' }}>Learn More</a>
             </div>
             
             <div className="feature-card">
               <div className="feature-icon">📦</div>
               <h3 className="feature-title">Freight Management</h3>
               <p className="feature-text">End-to-end freight management services including routing, scheduling, and tracking.</p>
-              <Link href="/landing/services/freight-management">
-                <span className="hero-cta" style={{ marginTop: '1rem', display: 'inline-block' }}>Learn More</span>
-              </Link>
+              <a href="/landing/services/freight-management" className="hero-cta" style={{ marginTop: '1rem', display: 'inline-block' }}>Learn More</a>
             </div>
             
             <div className="feature-card">
               <div className="feature-icon">🗄️</div>
               <h3 className="feature-title">Storage Containers</h3>
               <p className="feature-text">Flexible short and long-term storage solutions with secure transportation.</p>
-              <Link href="/landing/services/storage-containers">
-                <span className="hero-cta" style={{ marginTop: '1rem', display: 'inline-block' }}>Learn More</span>
-              </Link>
+              <a href="/landing/services/storage-containers" className="hero-cta" style={{ marginTop: '1rem', display: 'inline-block' }}>Learn More</a>
             </div>
             
             <div className="feature-card">

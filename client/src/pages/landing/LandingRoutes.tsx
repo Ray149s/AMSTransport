@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route, useLocation } from "wouter";
+import { Switch, Route } from "wouter";
 import LandingHome from './LandingHome';
 import FlatbedService from './FlatbedService';
 import NotFound from '@/pages/not-found';

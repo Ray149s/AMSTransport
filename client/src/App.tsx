@@ -27,8 +27,7 @@ function Router() {
           <Route path="/contact" component={Contact} />
           
           {/* Landing pages routes */}
-          <Route path="/landing/services" component={LandingHome} />
-          <Route path="/landing/services/flatbed" component={FlatbedService} />
+          <Route path="/landing/services/:rest*" component={LandingRoutes} />
           
           {/* 404 route */}
           <Route component={NotFound} />
