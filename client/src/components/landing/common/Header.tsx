@@ -39,12 +39,12 @@ const Header: React.FC<HeaderProps> = ({
       <div className="container">
         <div className="header-inner">
           <div className="logo">
-            <Link href="/landing/services">
+            <a href="/landing/services">
               <img 
                 src="/assets/logo.png" 
                 alt="AMS Transportation Logo" 
               />
-            </Link>
+            </a>
           </div>
           
           <nav className="nav-menu">
@@ -60,14 +60,13 @@ const Header: React.FC<HeaderProps> = ({
             <ul className={`nav-list ${isMenuOpen ? 'active' : ''}`}>
               {links.map((link, index) => (
                 <li key={index}>
-                  <Link href={link.url}>
-                    <span 
-                      className={link.type === 'cta' ? 'nav-cta' : ''}
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      {link.text}
-                    </span>
-                  </Link>
+                  <a 
+                    href={link.url}
+                    className={link.type === 'cta' ? 'nav-cta' : ''}
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {link.text}
+                  </a>
                 </li>
               ))}
             </ul>
