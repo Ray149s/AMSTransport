@@ -11,16 +11,26 @@ import Contact from "@/pages/Contact";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
+// Import Landing Routes
+import LandingRoutes from "@/pages/landing/LandingRoutes";
+
 function Router() {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-grow">
         <Switch>
+          {/* Main website routes */}
           <Route path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/services" component={Services} />
           <Route path="/contact" component={Contact} />
+          
+          {/* Landing pages routes */}
+          <Route path="/landing/services" component={LandingHome} />
+          <Route path="/landing/services/flatbed" component={FlatbedService} />
+          
+          {/* 404 route */}
           <Route component={NotFound} />
         </Switch>
       </main>
