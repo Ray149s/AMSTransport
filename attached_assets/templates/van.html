@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMS Transportation - Van Services</title>
+    <meta name="description" content="AMS Transportation offers reliable enclosed van transportation services to protect your freight from weather and elements. Get a free quote today!">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <!-- Actual Logo Image -->
+                    <div class="logo-img">
+                        <a href="{{ url_for('landing_home') }}">
+                            <img src="{{ url_for('static', filename='images/logo.png') }}?v={{ range(1000, 9999) | random }}" alt="AMS Transportation Logo">
+                        </a>
+                    </div>
+                </div>
+                <nav class="nav-menu">
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                    <ul class="nav-list" id="navList">
+                        <li><a href="{{ url_for('landing_home') }}">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#benefits">Benefits</a></li>
+                        <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-img-container">
+                <img src="{{ url_for('static', filename='images/services/van-new.png') }}?v={{ range(1000, 9999) | random }}" alt="AMS Transportation Van Fleet" class="hero-img">
+            </div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-headline">Van Transportation Services</h1>
+                <h2 class="hero-subheadline">Enclosed Transport Protecting Your Freight from the Elements</h2>
+                <a href="#contact" class="cta-button">Request a Free Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Features Section -->
+    <section class="services-section" id="features">
+        <div class="container">
+            <h2 class="section-title">Van Service Features</h2>
+            <div class="service-cards">
+                <!-- Feature 1 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <h3 class="service-title">Enclosed Protection</h3>
+                    <p class="service-text">Our van trailers provide complete protection from weather, road debris, and other environmental factors to keep your cargo safe and secure.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-temperature-low"></i>
+                    </div>
+                    <h3 class="service-title">Climate Control Options</h3>
+                    <p class="service-text">Temperature-controlled van options available for sensitive freight that requires specific environmental conditions during transport.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3 class="service-title">Enhanced Security</h3>
+                    <p class="service-text">Lockable trailers with additional security features to protect high-value shipments during transit and stops.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="value-section" id="benefits">
+        <div class="container">
+            <h2 class="section-title">Why Choose Our Van Services</h2>
+            <div class="benefit-cards">
+                <!-- Benefit 1 -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3 class="benefit-title">Modern Fleet</h3>
+                    <p class="benefit-text">Well-maintained dry van trailers with air-ride suspension to minimize freight movement and prevent damage during transport.</p>
+                </div>
+                
+                <!-- Benefit 2 -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3 class="benefit-title">Professional Drivers</h3>
+                    <p class="benefit-text">Experienced drivers with clean safety records and specific training in handling fragile, sensitive, and valuable cargo.</p>
+                </div>
+                
+                <!-- Benefit 3 -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h3 class="benefit-title">Flexible Scheduling</h3>
+                    <p class="benefit-text">Customized delivery schedules to meet your time-sensitive requirements with regular updates throughout transit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Common Cargo Types Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">Ideal Van Transport Applications</h2>
+            <div class="service-cards">
+                <!-- Cargo Type 1 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-boxes"></i>
+                    </div>
+                    <h3 class="service-title">Packaged Goods</h3>
+                    <p class="service-text">Boxed products, palletized items, retail merchandise, and other standard freight requiring weather protection.</p>
+                </div>
+                
+                <!-- Cargo Type 2 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-couch"></i>
+                    </div>
+                    <h3 class="service-title">Furniture & Fixtures</h3>
+                    <p class="service-text">Office furniture, retail fixtures, home furnishings, and other items requiring protection from the elements.</p>
+                </div>
+                
+                <!-- Cargo Type 3 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3 class="service-title">Electronics & Sensitive Items</h3>
+                    <p class="service-text">Computer equipment, electronics, appliances, and other moisture-sensitive goods that need complete protection.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Capture Form Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-content">
+                    <h2 class="section-title">Request Van Services</h2>
+                    <p class="contact-text">Fill out the form below and we'll contact you with a customized quote for your enclosed van shipping needs.</p>
+                </div>
+                <div class="contact-form-container">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Needed</label>
+                            <select id="service" name="service" required>
+                                <option value="van" selected>Van Transport</option>
+                                <option value="other">Other (Specify in Message)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message (Include cargo details, dimensions, weight if known)</label>
+                            <textarea id="message" name="message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Submit Request</button>
+                    </form>
+                    <div id="formResponse" class="form-response"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <img src="{{ url_for('static', filename='images/logo.png') }}?v={{ range(1000, 9999) | random }}" alt="AMS Transportation Logo" width="180">
+                    </div>
+                    <div class="footer-contact">
+                        <h3>Contact Us</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> 1920 Railroad Street, Suite #5, Statham, GA 30666</p>
+                        <p><i class="fas fa-phone"></i> (404) 925-7529</p>
+                        <p><i class="fas fa-envelope"></i> joe@alwaysmovingsomething.com</p>
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="{{ url_for('landing_home') }}">Home</a></li>
+                        <li><a href="#features">Service Features</a></li>
+                        <li><a href="#benefits">Benefits</a></li>
+                        <li><a href="#contact">Get a Quote</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AMS Transportation. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

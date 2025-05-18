@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMS Transportation - Flatbed Services</title>
+    <meta name="description" content="AMS Transportation offers specialized flatbed trucking services for oversized and irregular loads. Get a free quote today!">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <!-- Actual Logo Image -->
+                    <div class="logo-img">
+                        <a href="{{ url_for('landing_home') }}">
+                            <img src="{{ url_for('static', filename='images/logo.png') }}?v={{ range(1000, 9999) | random }}" alt="AMS Transportation Logo">
+                        </a>
+                    </div>
+                </div>
+                <nav class="nav-menu">
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                    <ul class="nav-list" id="navList">
+                        <li><a href="{{ url_for('landing_home') }}">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#benefits">Benefits</a></li>
+                        <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-img-container">
+                <img src="{{ url_for('static', filename='images/hero-truck.png') }}?v={{ range(1000, 9999) | random }}" alt="AMS Transportation Flatbed Truck" class="hero-img">
+            </div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-headline">Flatbed Trucking Services</h1>
+                <h2 class="hero-subheadline">Specialized Transport for Oversized and Irregular Loads</h2>
+                <a href="#contact" class="cta-button">Request a Free Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Features Section -->
+    <section class="services-section" id="features">
+        <div class="container">
+            <h2 class="section-title">Flatbed Service Features</h2>
+            <div class="service-cards">
+                <!-- Feature 1 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-truck-loading"></i>
+                    </div>
+                    <h3 class="service-title">Open-Deck Loading</h3>
+                    <p class="service-text">Our flatbed trailers provide easy access for loading and unloading of cargo from any angle, making them ideal for oversized and irregularly shaped freight.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-ruler-combined"></i>
+                    </div>
+                    <h3 class="service-title">Versatile Dimensions</h3>
+                    <p class="service-text">Standard 48-53 foot trailers with weight capacities up to 48,000 pounds, accommodating a wide range of cargo dimensions and specifications.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="service-title">Secure Transport</h3>
+                    <p class="service-text">Professional load securement with tarps, straps, chains, and edge protectors to ensure your cargo arrives safely and in perfect condition.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="value-section" id="benefits">
+        <div class="container">
+            <h2 class="section-title">Why Choose Our Flatbed Services</h2>
+            <div class="benefit-cards">
+                <!-- Benefit 1 -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="benefit-title">Specialized Equipment</h3>
+                    <p class="benefit-text">Modern fleet of flatbed trailers equipped with the latest technology and safety features for efficient cargo handling.</p>
+                </div>
+                
+                <!-- Benefit 2 -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3 class="benefit-title">Certified Operators</h3>
+                    <p class="benefit-text">Experienced drivers specially trained in flatbed operations, load securement, and oversized cargo transport regulations.</p>
+                </div>
+                
+                <!-- Benefit 3 -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3 class="benefit-title">Multi-State Coverage</h3>
+                    <p class="benefit-text">Comprehensive flatbed services throughout the Southeast region with permits and route planning for oversized loads.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Common Cargo Types Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">Common Flatbed Cargo Types</h2>
+            <div class="service-cards">
+                <!-- Cargo Type 1 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3 class="service-title">Construction Materials</h3>
+                    <p class="service-text">Lumber, steel beams, concrete forms, pipes, and other building materials that require open-deck loading.</p>
+                </div>
+                
+                <!-- Cargo Type 2 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tractor"></i>
+                    </div>
+                    <h3 class="service-title">Heavy Machinery</h3>
+                    <p class="service-text">Agricultural equipment, construction machinery, industrial systems, and other heavy oversized equipment.</p>
+                </div>
+                
+                <!-- Cargo Type 3 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-pallet"></i>
+                    </div>
+                    <h3 class="service-title">Palletized Goods</h3>
+                    <p class="service-text">Large pallets of materials that require side loading or overhead crane placement onto an open trailer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Capture Form Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-content">
+                    <h2 class="section-title">Request Flatbed Services</h2>
+                    <p class="contact-text">Fill out the form below and we'll contact you with a customized quote for your flatbed shipping needs.</p>
+                </div>
+                <div class="contact-form-container">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Needed</label>
+                            <select id="service" name="service" required>
+                                <option value="flatbed" selected>Flatbed</option>
+                                <option value="other">Other (Specify in Message)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message (Include cargo details, dimensions, weight if known)</label>
+                            <textarea id="message" name="message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Submit Request</button>
+                    </form>
+                    <div id="formResponse" class="form-response"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <img src="{{ url_for('static', filename='images/logo.png') }}?v={{ range(1000, 9999) | random }}" alt="AMS Transportation Logo" width="180">
+                    </div>
+                    <div class="footer-contact">
+                        <h3>Contact Us</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> 1920 Railroad Street, Suite #5, Statham, GA 30666</p>
+                        <p><i class="fas fa-phone"></i> (404) 925-7529</p>
+                        <p><i class="fas fa-envelope"></i> joe@alwaysmovingsomething.com</p>
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="{{ url_for('landing_home') }}">Home</a></li>
+                        <li><a href="#features">Service Features</a></li>
+                        <li><a href="#benefits">Benefits</a></li>
+                        <li><a href="#contact">Get a Quote</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AMS Transportation. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMS Transportation - Warehouse Relocation Services</title>
+    <meta name="description" content="AMS Transportation offers complete warehouse relocation services to efficiently move your inventory to new locations. Get a free quote today!">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <!-- Actual Logo Image -->
+                    <div class="logo-img">
+                        <a href="{{ url_for('landing_home') }}">
+                            <img src="{{ url_for('static', filename='images/logo.png') }}?v={{ range(1000, 9999) | random }}" alt="AMS Transportation Logo">
+                        </a>
+                    </div>
+                </div>
+                <nav class="nav-menu">
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                    <ul class="nav-list" id="navList">
+                        <li><a href="{{ url_for('landing_home') }}">Home</a></li>
+                        <li><a href="#process">Our Process</a></li>
+                        <li><a href="#benefits">Benefits</a></li>
+                        <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-img-container">
+                <img src="{{ url_for('static', filename='images/services/new-warehouse.png') }}?v={{ range(1000, 9999) | random }}" alt="AMS Transportation Warehouse Relocation" class="hero-img">
+            </div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-headline">Warehouse Relocation Services</h1>
+                <h2 class="hero-subheadline">Complete Solutions for Moving Your Inventory to New Locations</h2>
+                <a href="#contact" class="cta-button">Request a Free Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Process Section -->
+    <section class="services-section" id="process">
+        <div class="container">
+            <h2 class="section-title">Our Relocation Process</h2>
+            <div class="service-cards">
+                <!-- Process Step 1 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h3 class="service-title">Site Assessment</h3>
+                    <p class="service-text">Our team conducts a thorough inventory assessment of your current warehouse to plan efficient packing, loading, and relocation strategies.</p>
+                </div>
+                
+                <!-- Process Step 2 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3 class="service-title">Detailed Planning</h3>
+                    <p class="service-text">We develop a comprehensive relocation timeline with minimal disruption to your operations, including contingency plans for unexpected challenges.</p>
+                </div>
+                
+                <!-- Process Step 3 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-boxes"></i>
+                    </div>
+                    <h3 class="service-title">Organized Execution</h3>
+                    <p class="service-text">Our professional team handles packing, labeling, loading, transport, and setup at your new location with careful attention to detail.</p>
+                </div>
+                
+                <!-- Process Step 4 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-check-double"></i>
+                    </div>
+                    <h3 class="service-title">Verification & Setup</h3>
+                    <p class="service-text">We ensure all inventory is accounted for at the new location and assist with organized placement according to your specifications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="value-section" id="benefits">
+        <div class="container">
+            <h2 class="section-title">Why Choose Our Relocation Services</h2>
+            <div class="benefit-cards">
+                <!-- Benefit 1 -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-business-time"></i>
+                    </div>
+                    <h3 class="benefit-title">Minimized Downtime</h3>
+                    <p class="benefit-text">Strategic planning and efficient execution to reduce business interruption during the relocation process.</p>
+                </div>
+                
+                <!-- Benefit 2 -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-people-carry"></i>
+                    </div>
+                    <h3 class="benefit-title">Specialized Equipment</h3>
+                    <p class="benefit-text">Access to forklifts, pallet jacks, specialized dollies, and other equipment needed for safe handling of inventory.</p>
+                </div>
+                
+                <!-- Benefit 3 -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3 class="benefit-title">Project Management</h3>
+                    <p class="benefit-text">Dedicated project manager to coordinate all aspects of the relocation and serve as your single point of contact.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Relocation Types Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">Types of Relocations We Handle</h2>
+            <div class="service-cards">
+                <!-- Type 1 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-warehouse"></i>
+                    </div>
+                    <h3 class="service-title">Full Warehouse Moves</h3>
+                    <p class="service-text">Complete relocation of entire warehouse facilities, including inventory, shelving systems, and equipment.</p>
+                </div>
+                
+                <!-- Type 2 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-dolly-flatbed"></i>
+                    </div>
+                    <h3 class="service-title">Partial Inventory Transfers</h3>
+                    <p class="service-text">Moving specific sections of inventory to different locations while maintaining operational continuity.</p>
+                </div>
+                
+                <!-- Type 3 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3 class="service-title">Retail Store Setups</h3>
+                    <p class="service-text">Transferring inventory from warehouses to new retail locations with organized merchandising support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Capture Form Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-content">
+                    <h2 class="section-title">Plan Your Warehouse Relocation</h2>
+                    <p class="contact-text">Fill out the form below and we'll contact you to discuss your warehouse relocation needs and provide a customized quote.</p>
+                </div>
+                <div class="contact-form-container">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Needed</label>
+                            <select id="service" name="service" required>
+                                <option value="warehouse" selected>Warehouse Relocation</option>
+                                <option value="other">Other (Specify in Message)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message (Include details about your current and new locations, timeline, etc.)</label>
+                            <textarea id="message" name="message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Submit Request</button>
+                    </form>
+                    <div id="formResponse" class="form-response"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <img src="{{ url_for('static', filename='images/logo.png') }}?v={{ range(1000, 9999) | random }}" alt="AMS Transportation Logo" width="180">
+                    </div>
+                    <div class="footer-contact">
+                        <h3>Contact Us</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> 1920 Railroad Street, Suite #5, Statham, GA 30666</p>
+                        <p><i class="fas fa-phone"></i> (404) 925-7529</p>
+                        <p><i class="fas fa-envelope"></i> joe@alwaysmovingsomething.com</p>
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="{{ url_for('landing_home') }}">Home</a></li>
+                        <li><a href="#process">Our Process</a></li>
+                        <li><a href="#benefits">Benefits</a></li>
+                        <li><a href="#contact">Get a Quote</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AMS Transportation. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

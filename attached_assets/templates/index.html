@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMS Transportation - Your Freight. Our Priority.</title>
+    <meta name="description" content="AMS Transportation offers reliable logistics and transportation services since 2006. Get a free quote today!">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <!-- Actual Logo Image -->
+                    <div class="logo-img">
+                        <a href="{{ url_for('landing_home') }}">
+                            <img src="{{ url_for('static', filename='images/logo.png') }}?v={{ range(1000, 9999) | random }}" alt="AMS Transportation Logo">
+                        </a>
+                    </div>
+                </div>
+                <nav class="nav-menu">
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                    <ul class="nav-list" id="navList">
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#why-us">Why Us</a></li>
+                        <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <!-- Real truck image background -->
+            <div class="hero-img-container">
+                <img src="{{ url_for('static', filename='images/edited.png') }}?v={{ range(1000, 9999) | random }}" alt="AMS Transportation Fleet" class="hero-img">
+            </div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <!-- TODO: A/B test different headline variations -->
+                <h1 class="hero-headline">Your Freight Our Priority</h1>
+                <h2 class="hero-subheadline">Reliable Transportation and Logistics Services Since 2006</h2>
+                <!-- TODO: A/B test CTA button wording -->
+                <a href="#contact" class="cta-button">Get a Free Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition Section -->
+    <section class="value-section" id="why-us">
+        <div class="container">
+            <h2 class="section-title">Why Choose AMS</h2>
+            <div class="benefit-cards">
+                <!-- Benefit Card 1 -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3 class="benefit-title">18+ Years of Industry Excellence</h3>
+                    <p class="benefit-text">With nearly two decades of experience, we've perfected the art of logistics and transportation.</p>
+                </div>
+                
+                <!-- Benefit Card 2 -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="benefit-title">Customer-Centric, Customized Service</h3>
+                    <p class="benefit-text">We tailor our solutions to fit your unique business needs and challenges.</p>
+                </div>
+                
+                <!-- Benefit Card 3 -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h3 class="benefit-title">Reliable Delivery Across the Southeast</h3>
+                    <p class="benefit-text">Punctual and dependable transportation services throughout the entire Southeast region.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Services Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Core Services</h2>
+            <div class="service-cards">
+                <!-- Service Card 1 - Flatbed -->
+                <div class="service-card">
+                    <img src="{{ url_for('static', filename='images/services/flatbed-truck.png') }}?v={{ range(1000, 9999) | random }}" alt="Flatbed Truck" class="service-image">
+                    <h3 class="service-title">Flatbed</h3>
+                    <p class="service-text">Specialized transport for oversized loads requiring open flatbed trailers.</p>
+                    <a href="#contact" class="service-cta">Request Service</a>
+                </div>
+                
+                <!-- Service Card 2 - Van -->
+                <div class="service-card">
+                    <img src="{{ url_for('static', filename='images/services/van.png') }}?v={{ range(1000, 9999) | random }}" alt="Van Transport" class="service-image">
+                    <h3 class="service-title">Van</h3>
+                    <p class="service-text">Enclosed van transport protecting your freight from the elements.</p>
+                    <a href="#contact" class="service-cta">Request Service</a>
+                </div>
+                
+                <!-- Service Card 3 - Warehouse Relocation -->
+                <div class="service-card">
+                    <img src="{{ url_for('static', filename='images/services/warehouse-relocation.png') }}?v={{ range(1000, 9999) | random }}" alt="Warehouse Relocation" class="service-image">
+                    <h3 class="service-title">Warehouse Relocation</h3>
+                    <p class="service-text">Complete solution for moving warehouse inventory to new locations.</p>
+                    <a href="#contact" class="service-cta">Request Service</a>
+                </div>
+                
+                <!-- Service Card 4 - Freight Management -->
+                <div class="service-card">
+                    <img src="{{ url_for('static', filename='images/services/freight-management.png') }}?v={{ range(1000, 9999) | random }}" alt="Freight Management" class="service-image">
+                    <h3 class="service-title">Freight Management</h3>
+                    <p class="service-text">End-to-end logistics management for complex supply chain needs.</p>
+                    <a href="#contact" class="service-cta">Request Service</a>
+                </div>
+                
+                <!-- Service Card 5 - Storage Containers -->
+                <div class="service-card">
+                    <img src="{{ url_for('static', filename='images/services/storage-containers.png') }}?v={{ range(1000, 9999) | random }}" alt="Storage Containers" class="service-image">
+                    <h3 class="service-title">Storage Containers</h3>
+                    <p class="service-text">Secure storage solutions for short and long-term needs.</p>
+                    <a href="#contact" class="service-cta">Request Service</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Capture Form Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <!-- TODO: A/B test form position on page -->
+            <div class="contact-container">
+                <div class="contact-content">
+                    <h2 class="section-title">Let's Move Your Business Forward</h2>
+                    <p class="contact-text">Fill out the form below and we'll contact you with a customized quote for your shipping needs.</p>
+                </div>
+                <div class="contact-form-container">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Needed</label>
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected>Select a service</option>
+                                <option value="flatbed">Flatbed</option>
+                                <option value="van">Van</option>
+                                <option value="warehouse">Warehouse Relocation</option>
+                                <option value="freight">Freight Management</option>
+                                <option value="storage">Storage Containers</option>
+                                <option value="other">Other (Specify in Message)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Submit Request</button>
+                    </form>
+                    <div id="formResponse" class="form-response"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="testimonials">
+                <!-- Testimonial 1 -->
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"AMS Transportation has been our go-to logistics partner for over 5 years. Their reliability and attention to detail have made managing our supply chain much easier."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>- John D., Supply Chain Manager</h4>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"When we needed to relocate our entire warehouse in just one weekend, AMS made it happen without a single issue. Exceptional service under pressure!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>- Sarah M., Operations Director</h4>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Client Logos Placeholder -->
+            <div class="client-logos">
+                <h3>Trusted By Leading Companies</h3>
+                <div class="logo-placeholders">
+                    <div class="logo-placeholder">Client 1</div>
+                    <div class="logo-placeholder">Client 2</div>
+                    <div class="logo-placeholder">Client 3</div>
+                    <div class="logo-placeholder">Client 4</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <a href="{{ url_for('landing_home') }}">
+                            <img src="{{ url_for('static', filename='images/logo.png') }}?v={{ range(1000, 9999) | random }}" alt="AMS Transportation Logo" width="180">
+                        </a>
+                    </div>
+                    <div class="footer-contact">
+                        <h3>Contact Us</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> 1920 Railroad Street, Suite #5, Statham, GA 30666</p>
+                        <p><i class="fas fa-phone"></i> (404) 925-7529</p>
+                        <p><i class="fas fa-envelope"></i> joe@alwaysmovingsomething.com</p>
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#why-us">Why Choose Us</a></li>
+                        <li><a href="#contact">Get a Quote</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AMS Transportation. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
