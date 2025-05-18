@@ -2,6 +2,7 @@ import React from 'react';
 import { Switch, Route } from "wouter";
 import LandingHome from './LandingHome';
 import FlatbedService from './FlatbedService';
+import FlatbedServiceNew from './FlatbedServiceNew';
 import NotFound from '@/pages/not-found';
 
 /**
@@ -12,7 +13,7 @@ const LandingRoutes: React.FC = () => {
   return (
     <Switch>
       <Route path="/landing/services" component={LandingHome} />
-      <Route path="/landing/services/flatbed" component={FlatbedService} />
+      <Route path="/landing/services/flatbed" component={FlatbedServiceNew} />
       <Route component={NotFound} />
     </Switch>
   );
