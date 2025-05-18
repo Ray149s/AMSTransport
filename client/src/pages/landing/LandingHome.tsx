@@ -74,9 +74,7 @@ const LandingHome: React.FC = () => {
               <div className="feature-icon">🛠️</div>
               <h3 className="feature-title">Custom Solutions</h3>
               <p className="feature-text">Tailored logistics solutions designed to meet your unique transportation challenges.</p>
-              <Link href="/contact">
-                <span className="hero-cta" style={{ marginTop: '1rem', display: 'inline-block' }}>Contact Us</span>
-              </Link>
+              <a href="/contact" className="hero-cta" style={{ marginTop: '1rem', display: 'inline-block' }}>Contact Us</a>
             </div>
           </div>
         </div>

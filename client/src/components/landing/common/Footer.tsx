@@ -17,21 +17,21 @@ const Footer: React.FC = () => {
           <div className="footer-column">
             <h3>Our Services</h3>
             <ul className="footer-links">
-              <li><Link href="/landing/services/flatbed"><span>Flatbed Trucking</span></Link></li>
-              <li><Link href="/landing/services/van"><span>Van Transportation</span></Link></li>
-              <li><Link href="/landing/services/warehouse-relocation"><span>Warehouse Relocation</span></Link></li>
-              <li><Link href="/landing/services/freight-management"><span>Freight Management</span></Link></li>
-              <li><Link href="/landing/services/storage-containers"><span>Storage Containers</span></Link></li>
+              <li><a href="/landing/services/flatbed">Flatbed Trucking</a></li>
+              <li><a href="/landing/services/van">Van Transportation</a></li>
+              <li><a href="/landing/services/warehouse-relocation">Warehouse Relocation</a></li>
+              <li><a href="/landing/services/freight-management">Freight Management</a></li>
+              <li><a href="/landing/services/storage-containers">Storage Containers</a></li>
             </ul>
           </div>
           
           <div className="footer-column">
             <h3>Quick Links</h3>
             <ul className="footer-links">
-              <li><Link href="/"><span>Main Website</span></Link></li>
-              <li><Link href="/about"><span>About Us</span></Link></li>
-              <li><Link href="/services"><span>Services</span></Link></li>
-              <li><Link href="/contact"><span>Contact Us</span></Link></li>
+              <li><a href="/">Main Website</a></li>
+              <li><a href="/about">About Us</a></li>
+              <li><a href="/services">Services</a></li>
+              <li><a href="/contact">Contact Us</a></li>
             </ul>
           </div>
           
