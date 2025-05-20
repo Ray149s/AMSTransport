@@ -69,6 +69,38 @@ const servicesData: Record<string, ServiceData> = {
       { text: "Post-move support" }
     ],
     ctaText: "Schedule a warehouse relocation consultation"
+  },
+  "van-transportation": {
+    id: "van-transportation",
+    name: "Van Transportation Services",
+    description: "Efficient and reliable van transportation for your smaller shipments and deliveries.",
+    metaDescription: "AMS Transportation provides professional van transportation services for small to medium-sized shipments with fast, secure delivery nationwide.",
+    heroImage: "/assets/freight-management.png",
+    features: [
+      { text: "Fast delivery for time-sensitive shipments" },
+      { text: "Ideal for smaller, high-value items" },
+      { text: "Climate-controlled options available" },
+      { text: "Door-to-door service" },
+      { text: "Competitive rates for regular shipments" },
+      { text: "Professional drivers and modern fleet" }
+    ],
+    ctaText: "Get a van transportation quote today"
+  },
+  "storage-containers": {
+    id: "storage-containers",
+    name: "Storage Container Solutions",
+    description: "Secure, flexible storage container options for short and long-term needs.",
+    metaDescription: "AMS Transportation offers versatile storage container solutions for businesses and individuals. On-site or off-site options with full security and accessibility.",
+    heroImage: "/assets/Container.png",
+    features: [
+      { text: "Weather-resistant secure containers" },
+      { text: "Flexible rental terms - daily, weekly, monthly" },
+      { text: "Various sizes to fit your needs" },
+      { text: "On-site placement options" },
+      { text: "Temperature-controlled units available" },
+      { text: "24/7 access to your belongings" }
+    ],
+    ctaText: "Reserve your storage container"
   }
 };
 
