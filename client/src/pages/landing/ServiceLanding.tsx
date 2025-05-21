@@ -43,7 +43,7 @@ const servicesData: Record<string, ServiceData> = {
     name: "Flatbed Trucking Services",
     description: "Reliable flatbed trucking services for oversized and specialty loads.",
     metaDescription: "AMS Transportation provides specialized flatbed trucking services for oversized and awkward loads. Safe, reliable, and on-time delivery guaranteed.",
-    heroImage: "/assets/flatbed-truck.png",
+    heroImage: "/assets/ams-flatbed-truck.png",
     features: [
       { text: "Specialized equipment for oversized loads" },
       { text: "Experienced drivers for safe transport" },
