@@ -4,6 +4,7 @@ import LandingPageLayout from "@/components/LandingPageLayout";
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 import ContactForm from "./ContactForm";
+import flatbedTruckImage from "@/assets/1AMSTruck.png";
 
 // Define service data structure
 interface ServiceFeature {
@@ -43,7 +44,7 @@ const servicesData: Record<string, ServiceData> = {
     name: "Flatbed Trucking Services",
     description: "Reliable flatbed trucking services for oversized and specialty loads.",
     metaDescription: "AMS Transportation provides specialized flatbed trucking services for oversized and awkward loads. Safe, reliable, and on-time delivery guaranteed.",
-    heroImage: "/ams-flatbed-truck.png",
+    heroImage: flatbedTruckImage,
     features: [
       { text: "Specialized equipment for oversized loads" },
       { text: "Experienced drivers for safe transport" },
