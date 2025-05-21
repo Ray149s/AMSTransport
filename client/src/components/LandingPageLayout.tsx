@@ -25,7 +25,7 @@ const LandingPageLayout = ({
           <div className="flex justify-between items-center">
             <div className="flex items-center">
               <img 
-                src="/Logo Red Clear.png" 
+                src="/assets/Logo-Red-Clear.png" 
                 alt="AMS Transportation" 
                 className="h-12 mr-4" 
               />
