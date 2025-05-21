@@ -4,7 +4,6 @@ import LandingPageLayout from "@/components/LandingPageLayout";
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 import ContactForm from "./ContactForm";
-import flatbedTruckImage from "@/assets/1AMSTruck.png";
 
 // Define service data structure
 interface ServiceFeature {
@@ -28,7 +27,7 @@ const servicesData: Record<string, ServiceData> = {
     name: "Freight Management Solutions",
     description: "Professional freight management services tailored to your business needs.",
     metaDescription: "AMS Transportation offers comprehensive freight management solutions. Save time and money with our professional logistics services.",
-    heroImage: "/freight-management.png",
+    heroImage: "/assets/freight-management.png",
     features: [
       { text: "Dedicated account management" },
       { text: "Real-time shipment tracking" },
@@ -44,7 +43,7 @@ const servicesData: Record<string, ServiceData> = {
     name: "Flatbed Trucking Services",
     description: "Reliable flatbed trucking services for oversized and specialty loads.",
     metaDescription: "AMS Transportation provides specialized flatbed trucking services for oversized and awkward loads. Safe, reliable, and on-time delivery guaranteed.",
-    heroImage: flatbedTruckImage,
+    heroImage: "/assets/flatbed-truck.png",
     features: [
       { text: "Specialized equipment for oversized loads" },
       { text: "Experienced drivers for safe transport" },
@@ -60,7 +59,7 @@ const servicesData: Record<string, ServiceData> = {
     name: "Warehouse Relocation",
     description: "Efficient warehouse relocation services with minimal downtime.",
     metaDescription: "AMS Transportation specializes in warehouse relocations with minimal business disruption. Our team ensures safe transport of your inventory and equipment.",
-    heroImage: "/warehouse-relocation.png",
+    heroImage: "/assets/warehouse-relocation.png",
     features: [
       { text: "Comprehensive relocation planning" },
       { text: "Inventory management systems" },
@@ -70,38 +69,6 @@ const servicesData: Record<string, ServiceData> = {
       { text: "Post-move support" }
     ],
     ctaText: "Schedule a warehouse relocation consultation"
-  },
-  "van-transportation": {
-    id: "van-transportation",
-    name: "Van Transportation Services",
-    description: "Efficient and reliable van transportation for your smaller shipments and deliveries.",
-    metaDescription: "AMS Transportation provides professional van transportation services for small to medium-sized shipments with fast, secure delivery nationwide.",
-    heroImage: "/ams-van-transportation.png",
-    features: [
-      { text: "Fast delivery for time-sensitive shipments" },
-      { text: "Ideal for smaller, high-value items" },
-      { text: "Climate-controlled options available" },
-      { text: "Door-to-door service" },
-      { text: "Competitive rates for regular shipments" },
-      { text: "Professional drivers and modern fleet" }
-    ],
-    ctaText: "Get a van transportation quote today"
-  },
-  "storage-containers": {
-    id: "storage-containers",
-    name: "Storage Container Solutions",
-    description: "Secure, flexible storage container options for short and long-term needs.",
-    metaDescription: "AMS Transportation offers versatile storage container solutions for businesses and individuals. On-site or off-site options with full security and accessibility.",
-    heroImage: "/Container.png",
-    features: [
-      { text: "Weather-resistant secure containers" },
-      { text: "Flexible rental terms - daily, weekly, monthly" },
-      { text: "Various sizes to fit your needs" },
-      { text: "On-site placement options" },
-      { text: "Temperature-controlled units available" },
-      { text: "24/7 access to your belongings" }
-    ],
-    ctaText: "Reserve your storage container"
   }
 };
 
