@@ -75,7 +75,7 @@ const servicesData: Record<string, ServiceData> = {
     name: "Van Transportation Services",
     description: "Efficient and reliable van transportation for your smaller shipments and deliveries.",
     metaDescription: "AMS Transportation provides professional van transportation services for small to medium-sized shipments with fast, secure delivery nationwide.",
-    heroImage: "/assets/freight-management.png",
+    heroImage: "/assets/ams-van-transportation.png",
     features: [
       { text: "Fast delivery for time-sensitive shipments" },
       { text: "Ideal for smaller, high-value items" },
