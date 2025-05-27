@@ -34,7 +34,7 @@ const ServiceSection = () => {
 
           {/* Freight Management */}
           <div className="flex flex-col items-center text-center p-6">
-            <Package className="h-12 w-12 text-red-600 mb-4" />
+            <Package className="h-24 w-24 text-red-600 mb-4" />
             <h3 className="text-lg font-bold mb-4 uppercase">FREIGHT MANAGEMENT</h3>
             <p className="text-gray-600">
               Our freight management services take the hassle out of shipping, offering expert guidance every step of the way. From strategic planning to flawless execution to real-time tracking and detailed reporting, we ensure your freight moves seamlessly and reaches its destination with precision and efficiency.
