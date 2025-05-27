@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
+import heroImage from "../assets/edited2.jpg";
 
 interface HeroProps {
   showContactButton?: boolean;
@@ -10,7 +11,7 @@ const Hero = ({ showContactButton = true }: HeroProps) => {
     <div 
       className="hero-section bg-gray-800 relative overflow-hidden"
       style={{ 
-        backgroundImage: "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/assets/Homepage-Image.jpg')"
+        backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${heroImage})`
       }}
     >
       <div className="container mx-auto px-4 py-24 relative z-10">

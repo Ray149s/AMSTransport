@@ -21,6 +21,7 @@ import { apiRequest } from "@/lib/queryClient";
 import { z } from "zod";
 import Hero from "@/components/Hero";
 import ContactBar from "@/components/ContactBar";
+import { Link } from "wouter";
 
 // Form validation schema
 const formSchema = z.object({
@@ -169,14 +170,15 @@ const Contact = () => {
                               onCheckedChange={field.onChange}
                             />
                           </FormControl>
-                          <div className="space-y-1 leading-none">
-                            <FormLabel>
-                              Permission to contact
-                            </FormLabel>
-                            <FormDescription>
-                              By checking this box, you agree to allow AMS Transportation to contact you regarding your inquiry.
-                            </FormDescription>
-                          </div>
+                        <div className="space-y-1 leading-none">
+                          <FormLabel>
+                            Permission to contact
+                          </FormLabel>
+                          <FormDescription>
+                            By checking this box, you agree to allow AMS Transportation to contact you regarding your inquiry. 
+                            See our <Link href="/terms" className="text-blue-600 hover:text-blue-800 underline">Terms & Privacy Policy</Link> for more details.
+                          </FormDescription>
+                        </div>
                           <FormMessage />
                         </FormItem>
                       )}

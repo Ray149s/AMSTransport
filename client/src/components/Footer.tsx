@@ -44,7 +44,7 @@ const Footer = () => {
         <div className="border-t border-gray-900 pt-8 mt-8 text-sm text-gray-400 flex justify-between">
           <div className="flex items-center space-x-4">
             <p>©2006 - 2025 AMS Transportation</p>
-            <Link href="/privacy">
+            <Link href="/terms">
               <span className="hover:text-white transition cursor-pointer">Privacy Policy</span>
             </Link>
           </div>
