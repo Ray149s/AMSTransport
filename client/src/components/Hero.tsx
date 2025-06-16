@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import heroImage from "../assets/edited2.jpg";
+// import heroImage from "../assets/edited2.jpg";
+import heroImage from "../assets/AMSTransporationHomePageImage.png";
 
 interface HeroProps {
   showContactButton?: boolean;
