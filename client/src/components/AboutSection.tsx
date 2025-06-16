@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import ThreeTrucks1Van from "@/assets/3Turcks1Van.png"; // Adjust the import path as necessary
+import ThreeTrucks1Van from "@/assets/1_Image June 01, 2025 - 6_19AM.jpeg"; // Adjust the import path as necessary
 
 const AboutSection = () => {
   return (
