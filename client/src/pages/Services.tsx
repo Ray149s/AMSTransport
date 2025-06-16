@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet";
 import { Truck, Warehouse, Package, Container, ArrowRight } from "lucide-react";
 import { useState } from "react";
 import { Link } from "wouter";
-import servicesImage from "@/assets/ams-services-trucks-cropped.png";
+import servicesImage from "@/assets/AMSTransporationHomePageImage.png";
 import Hero from "@/components/Hero";
 import ContactBar from "@/components/ContactBar";
 import CallToAction from "@/components/CallToAction";
