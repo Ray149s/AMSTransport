@@ -222,7 +222,7 @@ const Terms = () => {
             <p>For questions about this Privacy Policy or to exercise your rights, contact us at:</p>
             <div className="ml-4 mb-4">
               <p><strong>Email:</strong> privacy@support.alwaysmovingsomething.com</p>
-              <p><strong>Phone:</strong> 943-227-5246</p>
+              <p><strong>Phone:</strong> 404-925-7529</p>
               <p><strong>Address:</strong> 1920 Railroad Street, Suite #5, Statham, GA 30666</p>
               <p><strong>Privacy Officer:</strong> John Tact</p>
             </div>
