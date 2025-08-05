@@ -81,11 +81,11 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
         
         <div className="p-4 border-t">
           <a 
-            href="tel:943-227-5246"
+            href="tel:404-925-7529"
             className="flex items-center text-red-600 font-medium"
           >
             <span className="mr-2">Call Us:</span>
-            <span>943-227-5246</span>
+            <span>404-925-7529</span>
           </a>
         </div>
       </div>
