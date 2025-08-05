@@ -8,8 +8,8 @@ const ContactBar = () => {
           <div className="flex items-center mb-4 md:mb-0">
             <Phone className="h-5 w-5 mr-2" />
             <span className="uppercase text-sm font-medium">CALL US</span>
-            <a href="tel:943-227-5246" className="ml-2 text-sm">
-              Tel: 943-227-5246
+            <a href="tel:4049257529" className="ml-2 text-sm">
+              Tel: 404-925-7529
             </a>
           </div>
           
