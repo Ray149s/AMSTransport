@@ -22,7 +22,7 @@ const CallToAction = () => {
                 Request a Quote <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
-            <a href="tel:943-227-5246">
+            <a href="tel:404-925-7529">
               <Button 
                 variant="outline" 
                 size="lg" 
