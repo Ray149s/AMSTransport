@@ -34,10 +34,10 @@ const LandingPageLayout = ({
             
             {/* Contact phone only */}
             <a 
-              href="tel:943-227-5246" 
+              href="tel:404-925-7529" 
               className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-md transition duration-300"
             >
-              Call Now: 943-227-5246
+              Call Now: 404-925-7529
             </a>
           </div>
         </div>
@@ -56,8 +56,8 @@ const LandingPageLayout = ({
             <p className="mt-2">
               <a href="mailto:joe@alwaysmovingsomething.com" className="text-red-500 hover:text-red-400">
                 joe@alwaysmovingsomething.com
-              </a> | <a href="tel:943-227-5246" className="text-red-500 hover:text-red-400">
-                943-227-5246
+              </a> | <a href="tel:404-925-7529" className="text-red-500 hover:text-red-400">
+                404-925-7529
               </a>
             </p>
           </div>
